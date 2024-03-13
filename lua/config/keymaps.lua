@@ -45,8 +45,5 @@ vim.keymap.set("n", "q", "<nop>")
 vim.keymap.set("n", "<leader>t", vim.cmd.TestNearest)
 vim.keymap.set("n", "<leader><S-t>", vim.cmd.TestFile)
 
--- toggle nvim tree
-vim.keymap.set("n", "<C-t>", vim.cmd.NvimTreeFindFileToggle)
-
 -- When in doubt, enter Ex mode
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
