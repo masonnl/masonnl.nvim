@@ -9,9 +9,6 @@ vim.g.loaded_netrwPlugin = 1
 -- Set the leader
 vim.g.mapleader = " "
 
--- Disable the mouse
-vim.opt.mouse = ""
-
 -- Make underlines curly
 vim.cmd([[ let &t_Cs = "\e[4:3m"]])
 vim.cmd([[ let &t_Ce = "\e[4:0m"]])
@@ -21,3 +18,6 @@ vim.opt.colorcolumn = "120"
 
 -- Keep the cursor centered
 vim.opt.scrolloff = 28
+
+-- Disable the mouse
+vim.opt.mouse = ""
