@@ -41,9 +41,5 @@ vim.keymap.set("n", "<leader>Y", '"+Y')
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "q", "<nop>")
 
--- run tests
-vim.keymap.set("n", "<leader>t", vim.cmd.TestNearest)
-vim.keymap.set("n", "<leader><S-t>", vim.cmd.TestFile)
-
 -- When in doubt, enter Ex mode
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
