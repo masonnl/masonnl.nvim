@@ -20,6 +20,7 @@ keymap.set("n", "sl", "<C-w>l", { desc = "Move right" }) -- right
 -- Move buffers
 keymap.set("n", "L", "<cmd>BufferLineCycleNext<CR>", { desc = "Next buffer" })
 keymap.set("n", "H", "<cmd>BufferLineCyclePrev<CR>", { desc = "Previous buffer" })
+keymap.set("n", "<leader>bd", "<cmd>bd<CR>", { desc = "Close buffer" })
 
 -- move highlighted code up or down and smartly indent
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
