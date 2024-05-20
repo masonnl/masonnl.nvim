@@ -33,3 +33,10 @@ opt.clipboard:append("unnamedplus")
 -- Split windows
 opt.splitright = true
 opt.splitbelow = true
+
+-- Keep the cursor centered
+vim.opt.scrolloff = 28
+
+-- Make underlines curly
+vim.cmd([[ let &t_Cs = "\e[4:3m"]])
+vim.cmd([[ let &t_Ce = "\e[4:0m"]])
