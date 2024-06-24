@@ -40,3 +40,6 @@ vim.opt.scrolloff = 28
 -- Make underlines curly
 vim.cmd([[ let &t_Cs = "\e[4:3m"]])
 vim.cmd([[ let &t_Ce = "\e[4:0m"]])
+
+-- Fix Treesitter's incliniation to unindent a line in Ruby when a period follows a keyword
+vim.cmd("autocmd FileType ruby setlocal indentkeys-=.")
