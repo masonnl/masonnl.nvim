@@ -12,6 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { import = "masonnl.plugins" },
-  { import = "masonnl.plugins.lsp" },
+  { import = "masonnl-nvim.plugins" },
+  { import = "masonnl-nvim.plugins.lsp" },
 })
