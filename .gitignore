@@ -1,1 +1,6 @@
 .DS_Store
+.luarc.json
+
+tags
+
+/result

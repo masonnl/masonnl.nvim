@@ -5,7 +5,7 @@ local opt = vim.opt
 opt.relativenumber = true
 opt.number = true
 
--- Tabs and indentation
+" Tabs and indentation
 opt.tabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
@@ -13,33 +13,33 @@ opt.autoindent = true
 
 opt.wrap = false
 
--- Search settings
+" Search settings
 opt.ignorecase = true
 opt.smartcase = true
 
-opt.cursorline = true -- Highlight the current line
+opt.cursorline = true
 
--- Turn on termguicolors for colorschemes to work as expected
+" Turn on termguicolors for colorschemes to work as expected
 opt.termguicolors = true
 opt.background = "dark"
 opt.signcolumn = "yes"
 
--- Backspace
+" Backspace
 opt.backspace = "indent,eol,start"
 
--- Clipboard
+" Clipboard
 opt.clipboard:append("unnamedplus")
 
--- Split windows
+" Split windows
 opt.splitright = true
 opt.splitbelow = true
 
--- Keep the cursor centered
+" Keep the cursor centered
 vim.opt.scrolloff = 28
 
--- Make underlines curly
+" Make underlines curly
 vim.cmd([[ let &t_Cs = "\e[4:3m"]])
 vim.cmd([[ let &t_Ce = "\e[4:0m"]])
 
--- Fix Treesitter's incliniation to unindent a line in Ruby when a period follows a keyword
+" Fix Treesitter's incliniation to unindent a line in Ruby when a period follows a keyword
 vim.cmd("autocmd FileType ruby setlocal indentkeys-=.")
